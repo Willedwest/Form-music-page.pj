@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  background-image: url(/images/alexander-shatov-qt7S2QuAhJI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  padding: 0 1rem;
+
+}
+
+main{
+  color:beige;
+  width: 100%;
+  max-width: 2000px;
+  min-width: 375px;
+  display: grid;
+  place-content: center;
+  gap: 1.5rem;
+  border: 1px solid hsl(342, 72%, 50%);
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+}
+
+ul{
+  list-style: none;
+}
+
+header{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h2{
+  color: hsl(342, 72%, 59%);
+  font-weight: 600;
+}
+
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form label{
+  display: block;
+  font-weight: 600;
+  font-family: 'poppins', sans-serif;
+}
+
+form input{
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  border-color: hsl(342, 72%, 50%, 0.6);
+  color: hsl(0, 0%, 100%);
+  margin-top: 0.3rem;
+}
+
+form input::placeholder{
+  color: rgba(250, 235, 215, 0.822);
+  font-family: 'poppins', sans-serif;
+}
+
+.fl{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+button{
+  padding: 0.5rem;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(342, 72%, 50%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+button:hover{
+  background-color: hsla(342, 72%, 50%, 0.781);
+  transition: 0.3s;
+}
+
+main p{
+  text-align: center;
+  font-weight: 600;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+ul{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li{
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: hsl(342, 72%, 50%);
+}
+
+ul li:hover{
+  color: hsl(342, 72%, 50%, 0.781);
+  transition: 0.3s;
+}
+
+@media (max-width: 650px){
+  .fl{
+    grid-template-columns: 1fr;
+  }
+}
